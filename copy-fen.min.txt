@@ -1,0 +1,1 @@
+javascript:(async()=>{try{let e=document.querySelector(".analysis-view-lines");if(!e)throw Error("Element .analysis-view-lines not found");let t=e.getAttribute("fen");if(!t)throw Error("FEN attribute not found");await navigator.clipboard.writeText(t)}catch(i){alert("Failed: "+i.message),console.error(i)}})();
